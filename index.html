@@ -15,8 +15,8 @@
     <hr>
     <div class="row align-items-center">
       <div class="col-1"></div>
-      <div class="col filter-buttons text-nowrap overflow-auto">
-        <button type="button" id="prev" class="btn btn-light">
+      <div id="filter" class="col filter-buttons text-nowrap overflow-auto">
+        <button type="button" id="prev" class="btn btn-light btn-control" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Anterior">
           <i class="bi bi-chevron-left"></i>
         </button>
         <button type="button" class="btn btn-light btn-sm">Todos</button>
@@ -36,7 +36,7 @@
         <button type="button" class="btn btn-light btn-sm">Tambor</button>
         <button type="button" class="btn btn-light btn-sm">Subidos recientemente</button>
         <button type="button" class="btn btn-light btn-sm">Novedad para ti</button>
-        <button type="button" id="next" class="btn btn-light">
+        <button type="button" id="next" onclick="slideLeft()" class="btn btn-light btn-control" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Siguiente">
           <i class="bi bi-chevron-right"></i>
         </button>
       </div>
